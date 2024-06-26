@@ -1,0 +1,14 @@
+/** @format */
+
+body {
+  overflow-x: hidden;
+}
+
+#gradient {
+  background: linear-gradient(
+    black 3%,
+    rgb(33 37 41) 10%,
+    rgb(176, 24, 24),
+    black
+  );
+}

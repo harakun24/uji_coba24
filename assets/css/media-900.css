@@ -1,0 +1,7 @@
+/** @format */
+
+@media screen and (max-width: 900px) {
+  #cover {
+    height: 49vw;
+  }
+}

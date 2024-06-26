@@ -1,0 +1,62 @@
+/** @format */
+
+.pagination > li > a {
+  background-color: white;
+  color: #5a4181;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: #ffffff;
+  background: rgb(243, 27, 27);
+  border: 1px solid rgba(77, 46, 46, 0.281);
+  box-shadow: 8px 8px 0px rgba(77, 46, 46, 0.281);
+
+  /* ; */
+}
+.pagination > li:hover {
+  cursor: pointer;
+}
+.pagination > li {
+  margin: 7px;
+  transition: cubic-bezier(0.23, 1, 0.32, 1) 0.5s;
+  box-shadow: 0px 0px 0px rgba(77, 46, 46, 0.281);
+}
+.pagination > .active > span {
+  color: white;
+  background-color: #d33226 !important;
+  border: solid 1px #e24e14 !important;
+}
+
+.pagination > .active > span:hover {
+  color: white;
+  background-color: #d33226 !important;
+  border: solid 1px #e24e14 !important;
+}
+
+.accordion-item {
+  margin-top: 15px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f81212b2;
+  color: #ffffff;
+}
+.accordion-button:not(:not(.collapsed)) {
+  background-color: #ffe3c2ee;
+  color: #6e1707;
+}
+
+.form-control:focus {
+  box-shadow: none; /* Menghilangkan shadow saat input difokuskan */
+  outline: none; /* Menghilangkan outline saat input difokuskan */
+}

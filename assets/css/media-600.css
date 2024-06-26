@@ -1,0 +1,32 @@
+/** @format */
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.67em;
+  }
+  #search {
+    height: 50vh;
+  }
+  #cover h2 {
+    font-size: 1.5rem;
+    z-index: 8;
+    top: 30%;
+  }
+  #search h2 {
+    font-size: 1.2em !important;
+    margin-top: 5vw;
+  }
+  #banner {
+    height: 50vw;
+    background-size: 200%;
+    background-attachment: scroll;
+    background-position: top;
+  }
+  #cover {
+    height: 46vw;
+  }
+  .inner-content {
+    width: 80%;
+    height: auto;
+  }
+}

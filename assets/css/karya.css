@@ -1,0 +1,33 @@
+/** @format */
+
+#karya div div a {
+  box-shadow: 4px 4px 0px rgb(247, 43, 43);
+  transition: cubic-bezier(0.23, 1, 0.32, 1) 0.5s;
+}
+#karya div div a:hover {
+  box-shadow: 10px 10px 0px rgb(77, 23, 23);
+}
+/*
+#karya {
+  height: 100vh;
+} */
+#karya .inner {
+  height: 90%;
+}
+#karya .inner::-webkit-scrollbar {
+  height: 0;
+}
+#karya .inner .card {
+  margin: 15px;
+  /* margin-right: auto; */
+  box-shadow: 0px 0px 24px rgba(236, 3, 3, 0.815),
+    12px 12px 14px rgba(8, 8, 8, 0.582);
+  /* -12px -12px 50px rgba(224, 224, 224, 0.24); */
+  z-index: 8;
+  position: relative;
+}
+
+.inner-content {
+  /* height: 40vw; */
+  height: 70vh;
+}
