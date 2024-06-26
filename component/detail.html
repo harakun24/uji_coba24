@@ -1,0 +1,53 @@
+<!-- @format -->
+
+<div class="row d-flex" style="width: 84vw; position: relative; top: 0">
+  <div
+    class="col-lg-8 bg-dark d-flex justify-content-center align-items-center"
+    id="detail-itm">
+    <img src="/assets/img/1.png" class="inner-content" alt="" />
+  </div>
+  <div class="col-lg-4 bg-white">
+    <div class="col-12">
+      <h2 class="m-4">Title</h2>
+      <p
+        class="col-12 text-secondary m-1"
+        style="max-height: 24vh; overflow-y: auto">
+        &nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Dolor dolores veritatis ab? Velit iste nisi voluptatum, dolorum
+        est qui neque illo natus dolore iure! Esse ipsum aliquam optio at
+        corrupti.
+      </p>
+    </div>
+    <div
+      class="col-lg-12 col-md-10 col-12 d-flex flex-lg-column flex-row justify-content-around align-items-center m-lg-4 m-1 mt-2 flex-wrap buttons">
+      <button
+        class="btn mx-2 btn-lg btn-outline-primary rounded-0 d-flex align-items-center my-2"
+        onclick="show_poster(2)">
+        <span class="d-md-inline-block d-none"> POSTER &nbsp; </span>
+        <i class="fas fa-images mx-2"></i>
+      </button>
+      <button
+        class="btn mx-2 btn-lg btn-outline-danger rounded-0 d-flex align-items-center my-2"
+        onclick=" show_video(2)">
+        <span class="d-md-inline-block d-none"> YOUTUBE </span>
+        <i class="fab fa-youtube mx-2"></i>
+      </button>
+      <button
+        class="btn mx-2 btn-lg btn-outline-secondary rounded-0 d-flex align-items-center my-2">
+        <span class="d-md-inline-block d-none" onclick="show_download(2)">
+          UNDUH &nbsp;
+        </span>
+        <i class="fas fa-download px-1 mx-2"></i>
+      </button>
+    </div>
+    <div class="col-12 d-flex justify-content-end align-items-center">
+      <button
+        class="btn btn-dark m-4 btn-md rounded-0"
+        onclick="vote2(id,this)"
+        style="border: 3px solid rgba(216, 153, 16, 0.897)"
+        data="false">
+        VOTE <i class="fas fa-vote-yea mx-2 fa-lg text-warning"></i>
+      </button>
+    </div>
+  </div>
+</div>

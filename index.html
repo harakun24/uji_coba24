@@ -1,0 +1,306 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/fa/css/fontawesome.css" />
+    <link rel="stylesheet" href="/assets/fa/css/brands.css" />
+    <link rel="stylesheet" href="/assets/fa/css/solid.css" />
+    <link rel="stylesheet" href="/assets/bootstrap/css/swal.css" />
+    <link rel="stylesheet" href="/assets/css/banner.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-override.css" />
+    <link rel="stylesheet" href="/assets/css/cover.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/karya.css" />
+    <link rel="stylesheet" href="/assets/css/media-900.css" />
+    <link rel="stylesheet" href="/assets/css/media-800.css" />
+    <link rel="stylesheet" href="/assets/css/media-600.css" />
+    <link rel="stylesheet" href="/assets/css/register.css" />
+    <link rel="stylesheet" href="/assets/css/search.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/bootstrap/js/swal.js"></script>
+    <script src="/assets/js/action.js"></script>
+    <script src="/assets/js/placholder.js"></script>
+    <script src="/assets/js/scroll.js"></script>
+  </head>
+
+  <body>
+    <div
+      class="container-fluid d-flex align-items-center justify-content-center position-relative"
+      id="cover">
+      <h2
+        class="text-white col-10 text-center position-absolute"
+        id="cover-header">
+        GELAR KARYA MAHASISWA 2024
+      </h2>
+      <img
+        id="layer0"
+        src="/assets/img/layer0.png"
+        class="position-absolute col-11 cover-img"
+        alt="" />
+      <img
+        id="layer1"
+        src="/assets/img/layer1.png"
+        class="position-absolute col-12 cover-img"
+        alt="" />
+      <img
+        id="layer2"
+        src="/assets/img/layer2.png"
+        class="position-absolute col-12 cover-img"
+        alt="" />
+      <img
+        id="layer3"
+        src="/assets/img/layer3.png"
+        class="position-absolute col-12 cover-img"
+        alt="" />
+    </div>
+    <div class="container-fluid" id="gradient">
+      <div
+        class="row d-flex justify-content-center position-relative flex-wrap align-content-center"
+        id="search">
+        <h2 class="text-center mb-2 text-white">GELAR KARYA MAHASISWA</h2>
+        <div
+          class="col-12 d-flex justify-content-center align-items-center my-5">
+          <div class="thin-line"></div>
+        </div>
+        <p class="col-sm-12 col-lg-8 text-white">
+          &nbsp;&nbsp;&nbsp;&nbsp;Selamat datang di pameran gelar karya program
+          studi teknologi informasi fakultas ilmu komputer universitas AMIKOM
+          Yogyakarta dengan fokus konsentrasi Animasi dan game development.
+        </p>
+        <p class="col-sm-12 col-lg-8 text-white">
+          &nbsp;&nbsp;&nbsp;&nbsp;Berikan dukungan dengan melakukan "vote" pada
+          karya dan "rate" untuk setiap detail produk nya.
+        </p>
+      </div>
+      <div
+        class="row d-flex justify-content-center align-items-center"
+        id="banner">
+        <h2 style="font-size: 250%" class="text-white text-center mt-2">
+          CONCEPT ART
+        </h2>
+        <div class="col-lg-5 col-sm-8">
+          <div class="input-group pb-2">
+            <input
+              type="text"
+              class="form-control p-sm-2 p-lg-2 rounded-0"
+              placeholder="Cari..."
+              aria-describedby="basic-addon2"
+              id="isearch" />
+            <span
+              class="input-group-text btn-secondary btn px-4 d-flex justify-content-between rounded-0"
+              id="basic-addon2"
+              ><i class="fa fa-search fa-sm"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="karya">
+        <div
+          id="inner"
+          class="inner col-12 d-flex justify-content-center align-items-center flex-wrap align-content-around mt-3">
+          <div
+            class="card col-sm-4 col-lg-2 col-md-3 col-sm-5 col-10 rounded-0">
+            <img src="/assets/img/layer0.png" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title">Card title</h5>
+
+              <a
+                onclick="generate()"
+                class="btn btn-outline-danger btn-sm mt-1 rounded-0 p-2 px-3"
+                >lihat detail &nbsp;<i
+                  class="fa fa-external-link fa-xs text-sm"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <nav class="col-12 mt-4">
+          <ul class="pagination justify-content-center">
+            <li></li>
+            <li class="page-item" onclick="generate(4)">
+              <a class="page-link">Prev</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onclick="generate(1)">1</a>
+            </li>
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">2</span>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onclick="generate(3)">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onclick="generate(7)">Next</a>
+            </li>
+            <li></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row d-flex justify-content-center mt-4" id="faq">
+        <h2 class="text-white text-center mb-4">FAQ</h2>
+        <div class="accordion col-lg-10" id="accordionPanelsStayOpenExample">
+          <div></div>
+          <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center" id="register">
+        <h2 class="text-white text-center my-4">Daftar acara</h2>
+        <div class="card col-lg-6 col-10 rounded-0 mt-4">
+          <div class="card-body">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword4" />
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="1234 Main St" />
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress2"
+                  placeholder="Apartment, studio, or floor" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity" />
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip" />
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck" />
+                  <label class="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center" id="footer">
+        <p class="text-white text-center opacity-50">© Copyright Fairul 2024</p>
+      </div>
+    </div>
+  </body>
+</html>
