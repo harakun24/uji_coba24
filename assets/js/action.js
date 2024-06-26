@@ -1,5 +1,5 @@
 function generate(d = 0) {
-    fetch("/component/item.html")
+    fetch("/uji_coba24/component/item.html")
         .then(data => data.text())
         .then(data => {
             console.log(data)
@@ -13,7 +13,7 @@ function generate(d = 0) {
 }
 
 function show_detail(id) {
-    fetch("/component/detail.html")
+    fetch("/uji_coba24/component/detail.html")
         .then(data => data.text())
         .then(data => {
 
@@ -30,7 +30,7 @@ function show_detail(id) {
 
 function show_poster(id) {
     const detail = document.getElementById("detail-itm")
-    fetch("/component/poster.html")
+    fetch("/uji_coba24/component/poster.html")
         .then(m => m.text())
         .then(m => {
             detail.innerHTML = m;
@@ -39,7 +39,7 @@ function show_poster(id) {
 function show_video(id) {
     document.get
     const detail = document.getElementById("detail-itm")
-    fetch("/component/video.html")
+    fetch("/uji_coba24/component/video.html")
         .then(m => m.text())
         .then(m => {
             detail.innerHTML = m;
@@ -52,7 +52,7 @@ function show_video(id) {
         })
 }
 function vote2(id, t) {
-    fetch("/component/toast.html")
+    fetch("/uji_coba/component/toast.html")
         .then(m => m.text())
         .then((m) => {
             if (t.getAttribute("data") == "false") {
